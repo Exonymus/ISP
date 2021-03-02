@@ -1,0 +1,6 @@
+/Users/exonymus/ISP/Lab1/Casino/bin/Debug/Casino.exe
+/Users/exonymus/ISP/Lab1/Casino/bin/Debug/Casino.pdb
+/Users/exonymus/ISP/Lab1/Casino/obj/Debug/Casino.csprojAssemblyReference.cache
+/Users/exonymus/ISP/Lab1/Casino/obj/Debug/Casino.csproj.CoreCompileInputs.cache
+/Users/exonymus/ISP/Lab1/Casino/obj/Debug/Casino.exe
+/Users/exonymus/ISP/Lab1/Casino/obj/Debug/Casino.pdb

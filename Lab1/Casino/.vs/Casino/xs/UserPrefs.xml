@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{A3C2C57A-0151-4A7E-9CE9-6E0E24BE462D}|Default">
-  <MonoDevelop.Ide.ItemProperties.Casino FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Casino PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
       <File FileName="Program.cs" Line="353" Column="1" />

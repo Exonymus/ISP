@@ -295,7 +295,6 @@ namespace Casino
         {
             Console.WriteLine("~~~~~~~|Казино Азартного программиста|~~~~~~");
             Player Player = new Player();
-            Casino cas = new Casino();
 
             int choice;
 

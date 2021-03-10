@@ -1,0 +1,6 @@
+/Users/exonymus/ISP/Lab2/Task.1/bin/Debug/Task.1.exe
+/Users/exonymus/ISP/Lab2/Task.1/bin/Debug/Task.1.pdb
+/Users/exonymus/ISP/Lab2/Task.1/obj/Debug/Task.1.csprojAssemblyReference.cache
+/Users/exonymus/ISP/Lab2/Task.1/obj/Debug/Task.1.csproj.CoreCompileInputs.cache
+/Users/exonymus/ISP/Lab2/Task.1/obj/Debug/Task.1.exe
+/Users/exonymus/ISP/Lab2/Task.1/obj/Debug/Task.1.pdb

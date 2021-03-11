@@ -7,36 +7,36 @@ namespace Task
         public static void Main(string[] args)
         {
             Console.WriteLine("Дата в формате 1: ");
-            string time1 = DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss");
-            int[] num1 = new int[10];
-            Console.WriteLine($"{time1}");
+            string timeFirst = DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss");
+            int[] numFirst = new int[10];
+            Console.WriteLine($"{timeFirst}");
 
             int i = 0;
-            while(i < time1.Length)
+            while(i < timeFirst.Length)
             {
-                if ((Convert.ToInt32(time1[i]) >= 48) && (Convert.ToInt32(time1[i]) <= 57))
-                    num1[Convert.ToInt32(time1[i]) - 48]++;
+                if ((Convert.ToInt32(timeFirst[i]) >= 48) && (Convert.ToInt32(timeFirst[i]) <= 57))
+                    numFirst[Convert.ToInt32(timeFirst[i]) - 48]++;
                 i++;
             }
             i = 0;
 
             for (int k = 0; k < 10; k++)
-                Console.WriteLine($"Число {k} в дате: {num1[k]}");
+                Console.WriteLine($"Число {k} в дате: {numFirst[k]}");
 
             Console.WriteLine("Дата в формате 2: ");
-            string time2 = DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fffffffzzz");
-            int[] num2 = new int[10];
-            Console.WriteLine($"{time2}");
+            string timeSecond = DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fffffffzzz");
+            int[] numSecond = new int[10];
+            Console.WriteLine($"{timeSecond}");
 
-            while (i < time2.Length)
+            while (i < timeSecond.Length)
             {
-                if ((Convert.ToInt32(time2[i]) >= 48) && (Convert.ToInt32(time2[i]) <= 57))
-                    num2[Convert.ToInt32(time2[i]) - 48]++;
+                if ((Convert.ToInt32(timeSecond[i]) >= 48) && (Convert.ToInt32(timeSecond[i]) <= 57))
+                    numSecond[Convert.ToInt32(timeSecond[i]) - 48]++;
                 i++;
             }
 
             for (int k = 0; k < 10; k++)
-                Console.WriteLine($"Число {k} в дате: {num2[k]}");
+                Console.WriteLine($"Число {k} в дате: {numSecond[k]}");
             Console.ReadKey();
         }
     }

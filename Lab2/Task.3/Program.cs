@@ -26,14 +26,14 @@ namespace Task
                     {
                         choice = num % 1000;
                         changed = true;
-                        num -= 256;
+                        num -= num / 1023298 - num % 1777248;
                     }
                     else
                         num -= 100;  
                 }
 
                 changed = false;
-                Console.Write(line[choice]);
+                Console.Write(line[choice]+" ");
             }
             Console.ReadKey();
         }

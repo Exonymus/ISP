@@ -1,0 +1,16 @@
+C:\C#\Lab4\Lab4_Task2\Lab4_Task2\Lab4_Task2\bin\x86\Debug\net5.0\Lab4_Task2.exe
+C:\C#\Lab4\Lab4_Task2\Lab4_Task2\Lab4_Task2\bin\x86\Debug\net5.0\Lab4_Task2.deps.json
+C:\C#\Lab4\Lab4_Task2\Lab4_Task2\Lab4_Task2\bin\x86\Debug\net5.0\Lab4_Task2.runtimeconfig.json
+C:\C#\Lab4\Lab4_Task2\Lab4_Task2\Lab4_Task2\bin\x86\Debug\net5.0\Lab4_Task2.runtimeconfig.dev.json
+C:\C#\Lab4\Lab4_Task2\Lab4_Task2\Lab4_Task2\bin\x86\Debug\net5.0\Lab4_Task2.dll
+C:\C#\Lab4\Lab4_Task2\Lab4_Task2\Lab4_Task2\bin\x86\Debug\net5.0\ref\Lab4_Task2.dll
+C:\C#\Lab4\Lab4_Task2\Lab4_Task2\Lab4_Task2\bin\x86\Debug\net5.0\Lab4_Task2.pdb
+C:\C#\Lab4\Lab4_Task2\Lab4_Task2\Lab4_Task2\obj\x86\Debug\net5.0\Lab4_Task2.csprojAssemblyReference.cache
+C:\C#\Lab4\Lab4_Task2\Lab4_Task2\Lab4_Task2\obj\x86\Debug\net5.0\Lab4_Task2.GeneratedMSBuildEditorConfig.editorconfig
+C:\C#\Lab4\Lab4_Task2\Lab4_Task2\Lab4_Task2\obj\x86\Debug\net5.0\Lab4_Task2.AssemblyInfoInputs.cache
+C:\C#\Lab4\Lab4_Task2\Lab4_Task2\Lab4_Task2\obj\x86\Debug\net5.0\Lab4_Task2.AssemblyInfo.cs
+C:\C#\Lab4\Lab4_Task2\Lab4_Task2\Lab4_Task2\obj\x86\Debug\net5.0\Lab4_Task2.csproj.CoreCompileInputs.cache
+C:\C#\Lab4\Lab4_Task2\Lab4_Task2\Lab4_Task2\obj\x86\Debug\net5.0\Lab4_Task2.dll
+C:\C#\Lab4\Lab4_Task2\Lab4_Task2\Lab4_Task2\obj\x86\Debug\net5.0\ref\Lab4_Task2.dll
+C:\C#\Lab4\Lab4_Task2\Lab4_Task2\Lab4_Task2\obj\x86\Debug\net5.0\Lab4_Task2.pdb
+C:\C#\Lab4\Lab4_Task2\Lab4_Task2\Lab4_Task2\obj\x86\Debug\net5.0\Lab4_Task2.genruntimeconfig.cache

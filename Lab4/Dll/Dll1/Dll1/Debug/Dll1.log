@@ -1,0 +1,18 @@
+﻿  pch.cpp
+  dllmain.cpp
+  Functions.cpp
+C:\C#\Lab4\Dll\Dll1\Dll1\Functions.cpp(7,1): warning C4273: Max: несовместимое связывание dll
+C:\C#\Lab4\Dll\Dll1\Dll1\Functions.h(9,44): message : см. предыдущее определение "Max"
+C:\C#\Lab4\Dll\Dll1\Dll1\Functions.cpp(14,1): warning C4273: Floor: несовместимое связывание dll
+C:\C#\Lab4\Dll\Dll1\Dll1\Functions.h(13,40): message : см. предыдущее определение "Floor"
+C:\C#\Lab4\Dll\Dll1\Dll1\Functions.cpp(19,1): warning C4273: Abs: несовместимое связывание dll
+C:\C#\Lab4\Dll\Dll1\Dll1\Functions.h(11,43): message : см. предыдущее определение "Abs"
+C:\C#\Lab4\Dll\Dll1\Dll1\Functions.cpp(27,1): warning C4273: Pow: несовместимое связывание dll
+C:\C#\Lab4\Dll\Dll1\Dll1\Functions.h(15,41): message : см. предыдущее определение "Pow"
+C:\C#\Lab4\Dll\Dll1\Dll1\Functions.cpp(36,1): warning C4273: Percentage: несовместимое связывание dll
+C:\C#\Lab4\Dll\Dll1\Dll1\Functions.h(17,41): message : см. предыдущее определение "Percentage"
+C:\C#\Lab4\Dll\Dll1\Dll1\Functions.cpp(41,1): warning C4273: Fact: несовместимое связывание dll
+C:\C#\Lab4\Dll\Dll1\Dll1\Functions.h(19,38): message : см. предыдущее определение "Fact"
+  Создание кода...
+     Создается библиотека C:\C#\Lab4\Dll\Dll1\Debug\Dll1.lib и объект C:\C#\Lab4\Dll\Dll1\Debug\Dll1.exp
+  Dll1.vcxproj -> C:\C#\Lab4\Dll\Dll1\Debug\Dll1.dll

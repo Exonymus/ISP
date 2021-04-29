@@ -1,14 +1,14 @@
-﻿<Properties StartupConfiguration="{A3C2C57A-0151-4A7E-9CE9-6E0E24BE462D}|Default">
-  <MonoDevelop.Ide.ItemProperties.Casino PreferredExecutionTarget="MonoDevelop.Default" />
+﻿<Properties StartupConfiguration="{46439510-4FB9-4820-B43C-ED2D1923673B}|Default">
+  <MonoDevelop.Ide.ItemProperties.Lab5 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="304" Column="54" />
+      <File FileName="Program.cs" Line="293" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Casino" expanded="True">
-            <Node name="Casino" expanded="True">
+          <Node name="Lab5" expanded="True">
+            <Node name="Lab5" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
           </Node>

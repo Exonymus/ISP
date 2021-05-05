@@ -2,6 +2,12 @@
 
 namespace Lab5
 {
+    interface IMenu
+    {
+        void printMenu();
+        int getChoice(int Choice);
+    }
+
     class Human
     {
         public string Name { get; set; }
@@ -120,7 +126,7 @@ namespace Lab5
             }
         }
 
-        public virtual void train(int time)
+        public virtual void Train(int time)
         {
             experience += Convert.ToInt32(time * 0.5) + equipLevel * 20;
             if (experience >= 100)
@@ -190,11 +196,11 @@ namespace Lab5
             Salary = 50;
         }
 
-        public override void train(int time)
+        public override void Train(int time)
         {
             Random rand = new Random();
             if (rand.Next(10) > 3)
-                base.train(time);
+                base.Train(time);
             else
                 Console.WriteLine("К сожалению сегодня плохая погода, и тренировку отменили.");
         }
@@ -252,9 +258,9 @@ namespace Lab5
             Salary = 20;
         }
 
-        public override void train(int time)
+        public override void Train(int time)
         {
-            base.train(time);
+            base.Train(time);
             Random rand = new Random();
             if (rand.Next(10) < 3)
             {
@@ -307,7 +313,7 @@ namespace Lab5
             Salary = 70;
         }
 
-        public override void train(int time)
+        public override void Train(int time)
         {
             if (Money < 20)
             {
@@ -315,7 +321,7 @@ namespace Lab5
                 return;
             }
 
-            base.train(time);
+            base.Train(time);
 
             Random rand = new Random();
             if (rand.Next(10) < 3)
@@ -363,10 +369,9 @@ namespace Lab5
 
     }
 
-
-    class MainClass
+    class Menu : IMenu
     {
-        public static void printMenu()
+        public void printMenu()
         {
             Console.WriteLine("1 - Тренироваться");
             Console.WriteLine("2 - Учавствовать в соревновании");
@@ -374,32 +379,40 @@ namespace Lab5
             Console.WriteLine("4 - Информация");
             Console.WriteLine("0 - Выход");
         }
-        public static void Main(string[] args)
-        {
-           
 
+        public int getChoice(int choice)
+        {
+            Console.WriteLine("Сделайте выбор: Футбол(1), Хоккей(2), или Плавание(3): ");
+            while (choice != 49 && choice != 50 && choice != 51)
+            {
+                choice = Console.Read();
+                if (choice != 49 && choice != 50 && choice != 51)
+                    Console.Write("\b");
+            }
+            Console.Clear();
+            return choice;
+        }
+    }
+
+    class MainClass
+    {
+        
+        public static void Main(string[] args)
+        { 
             Human woman = new Human("Анна", "Иванова", "Женщина", 32);
             Sportsman sp1 = new Sportsman(woman, "Россия", 13);
             Sportsman sp2 = new Sportsman(new Human("Джошуа", "Абрамович", "Мужчина", 20));
-            
+            Menu menu = new Menu();
 
             int choice = 0, sportCh = 0, salTime = 0;
-
-            Console.WriteLine("Сделайте выбор: Футбол(1), Хоккей(2), или Плавание(3): ");
-            while (sportCh != 49 && sportCh != 50 && sportCh != 51)
-            {
-                sportCh = Console.Read();
-                if (sportCh != 49 && sportCh != 50 && sportCh != 51)
-                    Console.Write("\b");
-            }
 
             FootballPlayer fb = new FootballPlayer(sp2);
             HockeyPlayer hp = new HockeyPlayer(new Sportsman(new Human("Евгений", "Сергеев", "Мужчина", 26)));
             Swimmer sw = new Swimmer(sp1);
 
-            Console.Clear();
+            sportCh = menu.getChoice(sportCh);
+            menu.printMenu();
 
-            printMenu();
             while (choice != 48)
             {
                 if (salTime == 5)
@@ -419,11 +432,11 @@ namespace Lab5
                     case 49:
                         Console.Write("\b");
                         if (sportCh == 49)
-                            fb.train(100);
+                            fb.Train(100);
                         else if (sportCh == 50)
-                            hp.train(100);
+                            hp.Train(100);
                         else if (sportCh == 51)
-                            sw.train(100);
+                            sw.Train(100);
                         salTime++;
                         break;
 
@@ -459,7 +472,7 @@ namespace Lab5
                             sw.AllInfo();
                         Console.ReadKey();
                         Console.Clear();
-                        printMenu();
+                        menu.printMenu();
                         break;
 
                     default:
@@ -467,8 +480,6 @@ namespace Lab5
                 }
                
             }
-
-
             Console.ReadKey();
         }
     }

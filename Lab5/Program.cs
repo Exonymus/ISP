@@ -2,10 +2,13 @@
 
 namespace Lab5
 {
-    interface IMenu
+    interface ISport
     {
-        void printMenu();
-        int getChoice(int Choice);
+        void Train(int time);
+        void Compete();
+        void upgradeEquipment();
+
+
     }
 
     class Human
@@ -73,7 +76,7 @@ namespace Lab5
         }
     }
 
-    class Sportsman : Human
+    class Sportsman : Human, ISport
     {
         public string Country { get; set; }
 
@@ -369,9 +372,9 @@ namespace Lab5
 
     }
 
-    class Menu : IMenu
+    class Menu
     {
-        public void printMenu()
+        public static void printMenu()
         {
             Console.WriteLine("1 - Тренироваться");
             Console.WriteLine("2 - Учавствовать в соревновании");
@@ -380,7 +383,7 @@ namespace Lab5
             Console.WriteLine("0 - Выход");
         }
 
-        public int getChoice(int choice)
+        public static int getChoice(int choice)
         {
             Console.WriteLine("Сделайте выбор: Футбол(1), Хоккей(2), или Плавание(3): ");
             while (choice != 49 && choice != 50 && choice != 51)
@@ -400,29 +403,23 @@ namespace Lab5
         public static void Main(string[] args)
         { 
             Human woman = new Human("Анна", "Иванова", "Женщина", 32);
-            Sportsman sp1 = new Sportsman(woman, "Россия", 13);
-            Sportsman sp2 = new Sportsman(new Human("Джошуа", "Абрамович", "Мужчина", 20));
-            Menu menu = new Menu();
 
             int choice = 0, sportCh = 0, salTime = 0;
 
-            FootballPlayer fb = new FootballPlayer(sp2);
+            FootballPlayer fb = new FootballPlayer(new Sportsman(new Human("Джошуа", "Абрамович", "Мужчина", 20)));
             HockeyPlayer hp = new HockeyPlayer(new Sportsman(new Human("Евгений", "Сергеев", "Мужчина", 26)));
-            Swimmer sw = new Swimmer(sp1);
+            Swimmer sw = new Swimmer(new Sportsman(woman, "Россия", 13));
 
-            sportCh = menu.getChoice(sportCh);
-            menu.printMenu();
+            Sportsman[] player = {fb, hp, sw};
+
+            sportCh = Menu.getChoice(sportCh);
+            Menu.printMenu();
 
             while (choice != 48)
             {
                 if (salTime == 5)
                 {
-                    if (sportCh == 49)
-                        fb.GetSalary();
-                    else if (sportCh == 50)
-                        hp.GetSalary();
-                    else if (sportCh == 51)
-                        sw.GetSalary();
+                    player[sportCh - 49].GetSalary();
                     salTime = 0;
                 }
 
@@ -431,48 +428,28 @@ namespace Lab5
                 {
                     case 49:
                         Console.Write("\b");
-                        if (sportCh == 49)
-                            fb.Train(100);
-                        else if (sportCh == 50)
-                            hp.Train(100);
-                        else if (sportCh == 51)
-                            sw.Train(100);
+                        player[sportCh - 49].Train(100);
                         salTime++;
                         break;
 
                     case 50:
                         Console.Write("\b");
-                        if (sportCh == 49)
-                            fb.Compete();
-                        else if (sportCh == 50)
-                            hp.Compete();
-                        else if (sportCh == 51)
-                            sw.Compete();
+                        player[sportCh - 49].Compete();
                         salTime++;
                         break;
 
                     case 51:
                         Console.Write("\b");
-                        if (sportCh == 49)
-                            fb.upgradeEquipment();
-                        else if (sportCh == 50)
-                            hp.upgradeEquipment();
-                        else if (sportCh == 51)
-                            sw.upgradeEquipment();
+                        player[sportCh - 49].upgradeEquipment();
                         salTime++;
                         break;
 
                     case 52:
                         Console.Clear();
-                        if (sportCh == 49)
-                            fb.AllInfo();
-                        else if (sportCh == 50)
-                            hp.AllInfo();
-                        else if (sportCh == 51)
-                            sw.AllInfo();
+                        player[sportCh - 49].AllInfo();
                         Console.ReadKey();
                         Console.Clear();
-                        menu.printMenu();
+                        Menu.printMenu();
                         break;
 
                     default:

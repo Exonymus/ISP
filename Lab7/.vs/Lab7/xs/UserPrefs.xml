@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{40A6AF97-714A-4F29-836D-1F9CC8876C21}|Default">
+  <MonoDevelop.Ide.ItemProperties.Lab7 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Converter.cs">
+    <Files>
+      <File FileName="Program.cs" Line="14" Column="54" />
+      <File FileName="Converter.cs" Line="126" Column="17" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Lab7" expanded="True">
+            <Node name="Lab7" expanded="True">
+              <Node name="Converter.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,6 @@
+/Users/exonymus/ISP/Lab7/bin/Debug/Lab7.exe
+/Users/exonymus/ISP/Lab7/bin/Debug/Lab7.pdb
+/Users/exonymus/ISP/Lab7/obj/Debug/Lab7.csprojAssemblyReference.cache
+/Users/exonymus/ISP/Lab7/obj/Debug/Lab7.csproj.CoreCompileInputs.cache
+/Users/exonymus/ISP/Lab7/obj/Debug/Lab7.exe
+/Users/exonymus/ISP/Lab7/obj/Debug/Lab7.pdb

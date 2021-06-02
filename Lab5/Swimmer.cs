@@ -40,7 +40,7 @@ namespace Lab5
                 Console.WriteLine("Противники оказались быстрее и вы проиграли");
         }
 
-        public override void upgradeEquipment()
+        public override void UpgradeEquipment()
         {
             int sum = equipLevel * 50;
             if (Money >= sum)

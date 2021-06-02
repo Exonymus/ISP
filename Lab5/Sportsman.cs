@@ -91,7 +91,7 @@ namespace Lab5
             }
         }
 
-        public virtual void upgradeEquipment()
+        public virtual void UpgradeEquipment()
         {
             if (Money >= equipLevel * 100)
             {

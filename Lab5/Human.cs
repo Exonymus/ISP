@@ -56,12 +56,12 @@ namespace Lab5
             Console.WriteLine($"Имя: {Name}\nФамилия: {Surname}\nПол: {Sex}\nВозраст: {Age}\nДеньги: {Money} руб.");
         }
 
-        public void shortInfo()
+        public void ShortInfo()
         {
             Console.WriteLine($"{Name} {Surname}, {Sex}, {Age} лет, ID = {ID}");
         }
 
-        public void getCount()
+        public void GetCount()
         {
             Console.WriteLine(Count);
         }

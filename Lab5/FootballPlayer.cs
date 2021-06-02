@@ -47,7 +47,7 @@ namespace Lab5
             }
         }
 
-        public override void upgradeEquipment()
+        public override void UpgradeEquipment()
         {
             int sum = equipLevel * 150;
             if (Money >= sum)

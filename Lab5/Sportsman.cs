@@ -12,6 +12,9 @@ namespace Lab5
         protected int equipLevel;
         protected int experience;
 
+        public delegate void XpGained(int xp);
+        public event XpGained Xp;
+
         public Sportsman() { Country = "Беларусь"; Awards = 1; Salary = 0; experience = 0; skillLevel = 0; equipLevel = 0; }
 
         public Sportsman(Human person) : base(person) { }
@@ -57,7 +60,10 @@ namespace Lab5
 
         public virtual void Train(int time)
         {
-            experience += Convert.ToInt32(time * 0.5) + equipLevel * 20;
+            int exp = Convert.ToInt32(time * 0.5) + equipLevel * 20;
+            experience += exp;
+            Xp(exp);
+
             if (experience >= 100)
             {
                 skillLevel++;
@@ -118,6 +124,11 @@ namespace Lab5
                 return Awards.CompareTo(sp.Awards);
             else
                 throw new ArgumentException("Некорректный объект");
+        }
+
+        public int GetXp()
+        {
+            return experience;
         }
     }
 }

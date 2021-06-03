@@ -1,0 +1,5 @@
+/Users/exonymus/ISP/Lab5/bin/Debug/Lab5.exe
+/Users/exonymus/ISP/Lab5/bin/Debug/Lab5.pdb
+/Users/exonymus/ISP/Lab5/obj/Debug/Lab5.6.8.csproj.CoreCompileInputs.cache
+/Users/exonymus/ISP/Lab5/obj/Debug/Lab5.exe
+/Users/exonymus/ISP/Lab5/obj/Debug/Lab5.pdb

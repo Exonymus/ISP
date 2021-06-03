@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{46439510-4FB9-4820-B43C-ED2D1923673B}|Default">
-  <MonoDevelop.Ide.ItemProperties.Lab5 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Lab5.6.8 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
       <File FileName="Program.cs" Line="48" Column="74" />
@@ -12,7 +12,7 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Lab5" expanded="True" selected="True">
+          <Node name="Lab5.6.8" expanded="True" selected="True">
             <Node name="Lab5" expanded="True" />
           </Node>
         </State>

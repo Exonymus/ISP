@@ -9,28 +9,6 @@ namespace Lab5
         void UpgradeEquipment();
     }
 
-    interface IBank
-    {
-        object GetBal();
-    }
-
-    class Client : IBank
-    {
-        string Name;
-        object Balance;
-
-        public Client(string name, object balance)
-        {
-            Name = name;
-            Balance = balance;
-        }
-
-        public object GetBal()
-        {
-            return Balance;
-        }
-    }
-
     class Menu
     {
         public static void printMenu()
@@ -69,14 +47,12 @@ namespace Lab5
             HockeyPlayer hp = new HockeyPlayer(new Sportsman(new Human("Евгений", "Сергеев", "Мужчина", 26)));
             Swimmer sw = new Swimmer(new Sportsman(woman, "Россия", 13));
 
-            Client cl1 = new Client("Client1", 123);
-            Client cl2 = new Client("Client2", 123.005);
-            Client cl3 = new Client("Client3", "123");
-            Client[] clients = { cl1, cl2, cl3 };
-
-            foreach (Client i in clients)
-                Console.WriteLine(i.GetBal());
-
+            fb.Xp += delegate (int xp)
+            {
+                Console.WriteLine($"Вы получили : {xp} оп.");
+            };
+            hp.Xp += (xp) => Console.WriteLine($"Вы получили : {xp} оп.");
+            sw.Xp += (xp) => Console.WriteLine($"Вы получили : {xp} оп.");
 
             Sportsman[] player = {fb, hp, sw};
 
